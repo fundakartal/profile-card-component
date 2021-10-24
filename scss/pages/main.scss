@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-Dark-cyan;
+  color: $color-Very-dark-desaturated-blue;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 42vh, left 46vw top 56vh;
+  background-repeat: no-repeat;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Card {
+  width: 90%;
+  margin: 2rem;
+  max-width: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 5rem 30rem -10rem $color-Very-dark-desaturated-blue;
+  &-user-img {
+    margin-top: -5rem;
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+  }
+
+  &-user-info {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2.3rem;
+    .username {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      .age {
+        margin-left: 1rem;
+        font-weight: 400;
+        color: $color-Dark-gray;
+      }
+    }
+    .city {
+      color: $color-Dark-gray;
+      font-size: 1.3rem;
+    }
+  }
+  &-details {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: .1rem solid rgba($color-Dark-gray, 0.2);
+    &-item {
+      text-align: center;
+      padding: 1rem;
+      .num {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: .5rem;
+      }
+      .text {
+        font-size: 1rem;
+        color: $color-Dark-gray;
+        letter-spacing: .2rem;
+        @include mq('tablet') {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: rgb(190, 229, 235);
+  font-weight: 700;
+  flex-basis: 90%;
+  a {
+    color: $color-Very-dark-desaturated-blue;
+  }
+  @include mq('tablet') {
+    position: absolute;
+    bottom: 1rem;
+  }
+}
