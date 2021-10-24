@@ -23,7 +23,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [ ]( )
+- Solution URL: [https://www.frontendmentor.io/solutions/profile-card-component-using-scss-XrNVQmfru](https://www.frontendmentor.io/solutions/profile-card-component-using-scss-XrNVQmfru)
 - Live Site URL: [https://fundakartal.github.io/profile-card-component/](https://fundakartal.github.io/profile-card-component/)
 
 ## My process
